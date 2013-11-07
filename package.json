@@ -1,0 +1,11 @@
+{
+    "name": "talmand.disable-autoclose-tags",
+    "title": "Disable Autoclose Tags",
+    "description": "Brackets extension that will disable the AutoClose Tags \"whenOpening\" feature of Codemirror.",
+    "homepage": "https://github.com/talmand/Brackets-Disable-AutoClose-Tags",
+    "version": "1.0.0",
+    "author": "Travis Almand",
+    "engines": {
+        "brackets": ">=0.20.0"
+    }
+}
