@@ -30,14 +30,14 @@ define(function (require, exports, module) {
     var AppInit = brackets.getModule("utils/AppInit"),
         CommandManager = brackets.getModule("command/CommandManager"),
         EditorManager = brackets.getModule("editor/EditorManager"),
-        NativeFileSystem = brackets.getModule("file/NativeFileSystem").NativeFileSystem,
+        FileSystem = brackets.getModule("filesystem/FileSystem"),
         FileUtils = brackets.getModule("file/FileUtils"),
         Menus = brackets.getModule("command/Menus");
     
     var file, fileEntry, settings;
     
     file = FileUtils.getNativeModuleDirectoryPath(module) + "/settings.json";
-    fileEntry = new NativeFileSystem.FileEntry(file);
+    fileEntry = new FileSystem.getFileForPath(file);
     
     function changeSettings() {
         // first we change the check in the menu, then update the settings, refresh the editor to apply changes
