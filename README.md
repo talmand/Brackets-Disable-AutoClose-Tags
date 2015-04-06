@@ -1,3 +1,9 @@
+Note: This extension isn't really necessary with newer versions of Brackets. Place the following line in the preferences file to get the same functionality.
+
+    "closeTags": { "whenOpening": false, "whenClosing": true, "indentTags": [] }
+
+Refer to https://github.com/adobe/brackets/pull/6888
+
 Brackets Disable AutoClose Tags extension
 ===
 Brackets extension that will disable the AutoClose Tags "whenOpening" feature of Codemirror.
